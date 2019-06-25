@@ -1,0 +1,56 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+img {
+    width: 100px;
+
+}
+head {
+    width: 500px;
+    background-color: #CB0101;
+}
+
+select{
+    text-align-last: center;
+}
+#League {
+    width: 360px;
+    font-size: 40px;
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+ #Season {
+    width: 360px;
+    font-size: 40px;
+    margin-left: 30%;
+    margin-bottom: 20px;   
+}
+#Team {
+    width: 360px;
+    font-size: 40px;
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+button {
+    width: 200px;
+    font-size: 40px;
+    margin-left: 36.5%;
+    margin-bottom: 20px;
+}
+h1 {
+    background-color: #CB0101;
+    font-size: 100px;
+    font-family: 'Comic Sans MS';
+    margin-bottom: 80px;
+}
+body {
+    background-color:#92C47D;
+}
+
+footer {
+    background-color: #DDDDDD;
+}
