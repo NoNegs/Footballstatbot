@@ -1,1 +1,1 @@
-web: node appLiverpoolV2.js
+web:node appLiverpoolV2.js
