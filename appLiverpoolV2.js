@@ -16,6 +16,8 @@ const router = require('./routes/liverpool.js')
 
 app.use(router)
 
-app.listen(3003, () => {
-    console.log("Server is up and listening on 3003...")
+const PORT = process.env.PORT || 3003
+
+app.listen(PORT, () => {
+    console.log("Server is up and listening on: " + Port)
 })
