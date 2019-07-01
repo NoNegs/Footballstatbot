@@ -16,6 +16,11 @@ const router = require('./routes/liverpool.js')
 
 app.use(router)
 
+app.get("/", (req, res) => {
+    console.log("Responding to root route")
+    res.send("Hello from ROOOOT")
+})
+
 const PORT = process.env.PORT || 3003
 
 app.listen(PORT, () => {
