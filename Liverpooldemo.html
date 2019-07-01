@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "footballStyle.css"
+        rel="stylesheet"
+        type="text/css"></link>
+        <script src="Footballapi.js"></script>
+
+    </head>
+    <body>
+    <h1>Football Statbot 
+        <img src="Footballstatbot.png" alt="Footballstatbot">
+    </h1>
+    <div>
+        <ul class="breadcrumb">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="League.html">League</a></li>
+            <li><a href="Season.html">Season</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li>Liverpool</li>
+        </ul>   
+    </div>
+        <div class="Liverpool">
+            <form action="/action_page.php" method="get">
+                <label class="radio"><input type="radio" name="rsvp" checked>Goals</label>
+                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Clean Sheets</label>
+                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Cards</label>
+                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Tackles</label>
+                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Apperances</label>
+                <div>
+                    <label class ="checkbox"><input type="checkbox" id="August" value="August"> August</label><br>
+                    <label class ="checkbox"><input type="checkbox" id="September" value="September"> September</label><br>
+                    <label class ="checkbox"><input type="checkbox" id="October" value="October"> October</label><br>
+                    <label class ="checkbox"><input type="checkbox" id="November" value="November"> November</label><br>
+                    <label class ="checkbox"><input type="checkbox" id="Decemeber" value="December"> December</label><br>
+                    <label class ="checkbox"><input type="checkbox" id="January" value="January"> Janaury</label><br>
+                    <label class ="checkbox"><input type="checkbox" id="February" value="February"> February</label><br>
+                    <label class ="checkbox"><input type="checkbox" id="March" value="March"> March</label><br>
+                    <label class ="checkbox"><input type="checkbox" id="April" value="April"> April</label><br>
+                    <label class ="checkbox"><input type="checkbox" id="May" value="May"> May</label><br>
+                    <input type="submit" value="Submit">
+                    </form>    
+                </div>
+                <div>
+                <p>Click the "Try it" button to find out whether the checkbox is checked, or not.</p>
+
+                <button onclick="myFunction()">Try it</button>
+
+                <p id="demo"></p>
+
+                </div>
+
+
+                <div class = "months" id="months"></div>
+            </div>
+            
+                  
+
+    <div class ="footer">
+        <div class ="block">
+            <h2>General</h2>
+            <ul>
+                <a href="#">About Us</a><br>
+                <a href="#">Terms of Use</a><br>
+                <a href="#">Glossary</a>
+                </ul>
+            </div>
+            <div class = "block">
+            <h2>Contact Us</h2>
+                <ul>
+                    <a href="#">Contact Us</a><br>
+                </ul>
+            </div>
+            <div class = "block">
+            <h2>Social Media Network</h2>
+                <ul>
+                    <a href="https://twitter.com/Footballstatbo1" class="fa fa-twitter"></a><a href="https://twitter.com/Footballstatbo1">Twitter</a><br>
+                    <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a><a href="https://en-gb.facebook.com/">Facebook</a><br>
+                </ul>
+            </div>
+            <div class = "block">
+            <h2>Football Statbot App</h2>
+                <img src="google-play-badge.png" alt="google-play-badge">
+            </div>
+
+            <script>
+                    function myFunction() {
+                        var parameters=new Array();
+                        //alert()
+                          if (document.getElementById("August").checked) {
+                            parameters.push("August");
+                          }
+                          if( document.getElementById("September").checked){
+                            parameters.push("September"); 
+                          }
+                          if( document.getElementById("October").checked){
+                            parameters.push("October"); 
+                          }
+                          if( document.getElementById("November").checked){
+                            parameters.push("November"); 
+                          }
+                          if( document.getElementById("December").checked){
+                            parameters.push("December"); 
+                          }
+                          if( document.getElementById("January").checked){
+                            parameters.push("Janaury"); 
+                          }
+                          if( document.getElementById("February").checked){
+                            parameters.push("February"); 
+                          }
+                          if( document.getElementById("March").checked){
+                            parameters.push("March"); 
+                          }
+                          if( document.getElementById("April").checked){
+                            parameters.push("April"); 
+                          }
+                          if( document.getElementById("May").checked){
+                            parameters.push("May"); 
+                          }
+                          fetchGoals(parameters);
+                }
+                
+            </script>
+    </body>
+    
+    
+</html>

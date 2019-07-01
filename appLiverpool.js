@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 
 app.use(express.static("./public"))
 
-app.use(morgan('combined'))
+app.use(morgan('short'))
 
 app.post('/suggestions_create', (req, res) => {
     console.log("Trying to store new suggestion")

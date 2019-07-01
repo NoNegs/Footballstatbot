@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href = "footballStyle.css"
         rel="stylesheet"
         type="text/css"></link>
@@ -10,38 +11,47 @@
     <h1>Football Statbot 
         <img src="Footballstatbot.png" alt="Footballstatbot">
     </h1>
-    <div>
+    <div class = "mainH">
             <select id="League" name="Select League" onchange="location = this.value;">
-            <option class ="dp" value="-1">- Select League -</option>
-            <option class ="dp" value= "League.html" >Premier League</option>
+            <option id ="LO" value="-1">- Select League -</option>
+            <option class ="PO" value= "League.html" >Premier League</option>
         </select><br>
         <select id="Season" name="Season">
-            <option class ="dp" value="-1">- Select Season -</option>
+            <option class ="SO" value="-1">- Select Season -</option>
         </select><br>
         <select id="Team" name="Team">
-            <option class ="dp" value="-1">- Select Team -</option>
-            <option class ="dp" value="1">Liverpool</option>
+            <option class ="TO" value="-1">- Select Team -</option>
+            <option class ="LIVO" value="1">Liverpool</option>
         </select><br>
-        <button>Submit</button>
-        <input type="submit" value="Submit">
+        <button class = "submit">Submit</button>
     </div>
-    <div>
-    
-    </div>
+    <div class ="footer">
+            <div class ="block">
+                <h2>General</h2>
+                <ul>
+                    <a href="#">About Us</a><br>
+                    <a href="#">Terms of Use</a><br>
+                    <a href="#">Glossary</a>
+                </ul>
+            </div>
+            <div class = "block">
+            <h2>Contact Us</h2>
+                <ul>
+                    <a href="#">Contact Us</a><br>
+                </ul>
+            </div>
+            <div class = "block">
+            <h2>Social Media Network</h2>
+                <ul>
+                    <a href="https://twitter.com/Footballstatbo1" class="fa fa-twitter"></a><a href="https://twitter.com/Footballstatbo1">Twitter</a><br>
+                    <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a><a href="https://en-gb.facebook.com/">Facebook</a><br>
+                </ul>
+            </div>
+            <div class = "block">
+            <h2>Football Statbot App</h2>
+                <img src="google-play-badge.png" alt="google-play-badge">
+            </div>
     </body>
-    <footer>
-        <div>
-            <h2>General</h2>
-            <ul class="breadcrumb">
-                <a href="#">About Us</a><br>
-                <a href="#">Terms of Use</a><br>
-                <a href="#">Glossary</a><br>
-            </ul>
-        </div>
-        <div>
-        <h2>Contact Us</h2>
-        </div>
-        <h2>Social Media Network</h2>
-        <h2>Football Statbot App</h2>
-    </footer>
+    
+    
 </html>
