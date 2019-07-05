@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href = "footballStyle.css"
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "mainStyle.css"
         rel="stylesheet"
         type="text/css"></link>
         <script src="Footballapi.js"></script>
@@ -20,68 +21,34 @@
             <li>Liverpool</li>
         </ul>   
     </div>
+    <h3>Please select from the months below and hit submit to see goals scored</h3>
+    <div class = "mainL">
         <div class="Liverpool">
-            <form action="/action_page.php" method="get">
-                <label class="radio"><input type="radio" name="rsvp" checked>Goals</label>
-                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Clean Sheets</label>
-                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Cards</label>
-                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Tackles</label>
-                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Apperances</label>
+            <form>
                 <div>
                     <label class ="checkbox"><input type="checkbox" id="August" value="August"> August</label><br>
                     <label class ="checkbox"><input type="checkbox" id="September" value="September"> September</label><br>
                     <label class ="checkbox"><input type="checkbox" id="October" value="October"> October</label><br>
                     <label class ="checkbox"><input type="checkbox" id="November" value="November"> November</label><br>
-                    <label class ="checkbox"><input type="checkbox" id="Decemeber" value="December"> December</label><br>
+                    <label class ="checkbox"><input type="checkbox" id="December" value="December"> December</label><br>
                     <label class ="checkbox"><input type="checkbox" id="January" value="January"> Janaury</label><br>
                     <label class ="checkbox"><input type="checkbox" id="February" value="February"> February</label><br>
                     <label class ="checkbox"><input type="checkbox" id="March" value="March"> March</label><br>
                     <label class ="checkbox"><input type="checkbox" id="April" value="April"> April</label><br>
                     <label class ="checkbox"><input type="checkbox" id="May" value="May"> May</label><br>
-                    <input type="submit" value="Submit">
-                    </form>    
+                    <button onclick="myFunction()">Submit</button>    
+                    </form> 
+                    <table class="result" id="result"><th>Months</th><th>Goals</th></table>
+                    <table class = "months" id="months"></table>
                 </div>
-                <div>
-                <p>Click the "Try it" button to find out whether the checkbox is checked, or not.</p>
-
-                <button onclick="myFunction()">Try it</button>
-
-                <p id="demo"></p>
-
-                </div>
-
-
-                <div class = "months" id="months"></div>
+                
+                
+                
+              
             </div>
-            
-                  
-
-    <div class ="footer">
-        <div class ="block">
-            <h2>General</h2>
-            <ul>
-                <a href="#">About Us</a><br>
-                <a href="#">Terms of Use</a><br>
-                <a href="#">Glossary</a>
-                </ul>
-            </div>
-            <div class = "block">
-            <h2>Contact Us</h2>
-                <ul>
-                    <a href="#">Contact Us</a><br>
-                </ul>
-            </div>
-            <div class = "block">
-            <h2>Social Media Network</h2>
-                <ul>
-                    <a href="https://twitter.com/Footballstatbo1" class="fa fa-twitter"></a><a href="https://twitter.com/Footballstatbo1">Twitter</a><br>
-                    <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a><a href="https://en-gb.facebook.com/">Facebook</a><br>
-                </ul>
-            </div>
-            <div class = "block">
-            <h2>Football Statbot App</h2>
-                <img src="google-play-badge.png" alt="google-play-badge">
-            </div>
+          </div>
+                
+                
 
             <script>
                     function myFunction() {
@@ -103,7 +70,7 @@
                             parameters.push("December"); 
                           }
                           if( document.getElementById("January").checked){
-                            parameters.push("Janaury"); 
+                            parameters.push("January"); 
                           }
                           if( document.getElementById("February").checked){
                             parameters.push("February"); 
@@ -118,9 +85,39 @@
                             parameters.push("May"); 
                           }
                           fetchGoals(parameters);
+
+                          
                 }
-                
             </script>
+            <div class ="footer">
+                <div class ="block">
+                    <ul>
+                        <h2>General</h2>
+                        <a href="About.html">About Us</a><br>
+                        <a href="TermsOfUse.html">Terms of Use</a><br>
+                        <a href="Glossary.html">Glossary</a>
+                    </ul>
+                </div>
+                <div class = "block">
+                    <ul>
+                        <h2>Contact Us</h2>
+                        <a href="http://localhost:3003/ContactForm.html">Contact Us</a><br>
+                        <a href="http://localhost:3003/Request_Suggestion.html">Make A Suggestion</a><br>
+                        <a href="Suggestions_Results.html">Results</a><br>
+                    </ul>
+                </div>
+                <div class = "block">
+                    <ul>
+                        <h2>Social Media Network</h2>
+                        <a href="https://twitter.com/Footballstatbo1" class="fa fa-twitter"></a><a href="https://twitter.com/Footballstatbo1">Twitter</a><br>
+                        <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a><a href="https://en-gb.facebook.com/">Facebook</a><br>
+                    </ul>
+                </div>
+                <div class = "block">
+                <h2>Football Statbot App</h2>
+                    <img src="google-play-badge.png" alt="google-play-badge">
+                    <img src="App-store.png" alt="App-store">
+                </div>
     </body>
     
     

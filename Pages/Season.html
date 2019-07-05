@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = "dropStyle.css"
+        rel="stylesheet"
+        type="text/css"></link>
+
+    </head>
+    <body>
+    <h1>Football Statbot 
+        <img src="Footballstatbot.png" alt="Footballstatbot">
+    </h1>
+    <div>
+        <ul class="breadcrumb">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="League.html">League</a></li>
+            <li>Season</li>
+          </ul>
+    </div>
+    <div class = "mainL">
+        <select id="League" name="Select League">
+            <option class ="dp" value="1" >Premier League</option>
+        </select><br>
+        <select id="Season" name="Select Season">
+                <option class ="dp" value="1" >2018/2019</option>
+        </select><br>
+        <select id="Team" name="Select Team" onchange="location = this.value;"> 
+            <option class ="dp" value="-1">- Select Team -</option>
+            <option class ="dp" value="http://localhost:3003/Liverpool.html">Liverpool</option>
+            <option class ="dp" value="http://localhost:3003/manCity.html">Man City</option>
+            <option class ="dp" value="http://localhost:3003/manUtd.html">Man Utd</option>
+        </select><br>
+    </div>
+    <div class ="footer">
+            <div class ="block">
+                <ul>
+                    <h2>General</h2>
+                    <a href="About.html">About Us</a><br>
+                    <a href="TermsOfUse.html">Terms of Use</a><br>
+                    <a href="Glossary.html">Glossary</a>
+                </ul>
+            </div>
+            <div class = "block">
+                <ul>
+                    <h2>Contact Us</h2>
+                    <a href="http://localhost:3003/ContactForm.html">Contact Us</a><br>
+                    <a href="http://localhost:3003/Request_Suggestion.html">Make A Suggestion</a><br>
+                </ul>
+            </div>
+            <div class = "block">
+                <ul>
+                    <h2>Social Media Network</h2>
+                    <a href="https://twitter.com/Footballstatbo1" class="fa fa-twitter"></a><a href="https://twitter.com/Footballstatbo1">Twitter</a><br>
+                    <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a><a href="https://en-gb.facebook.com/">Facebook</a><br>
+                </ul>
+            </div>
+            <div class = "block">
+            <h2>Football Statbot App</h2>
+                <img src="google-play-badge.png" alt="google-play-badge"><br>
+                <img src="App-store.png" alt="App-store">
+            </div>
+    </body>
+</html>

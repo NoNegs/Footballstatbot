@@ -24,6 +24,33 @@ router.post('/suggestions_create', (req, res) => {
         }
 
         console.log("Inserted new suggestion")
+        res.redirect("http://localhost:3003/Suggestions_Results.html")
+        res.end()
+    })
+
+})
+
+router.post('/contact_form', (req, res) => {
+    console.log("Trying to store new message")
+
+    console.log("First Name: " + req.body.create_first_name)
+    const firstName = req.body.create_first_name
+    const secondName = req.body.create_second_name
+    const email = req.body.create_email
+    const message = req.body.create_message
+
+
+
+    const queryString = "INSERT INTO contact (first_name, second_name, email, message ) VALUES (?, ?, ?, ?)"
+    getConnection().query(queryString, [firstName, secondName, email, message], (err, results, fields) => {
+        if (err) {
+            console.log("Failed to insert message: " + err)
+            res.sendStatus(500)
+            return
+        }
+
+        console.log("Inserted new message")
+        res.redirect("http://localhost:3003/CMR.html")
         res.end()
     })
 
@@ -56,6 +83,51 @@ router.get('/liverpool', (req, res) => {
     connection.query(queryString, (err, rows, fields) => {
         if (err) {
             console.log("Failed to query goals: " + err)
+            res.sendStatus(500)
+            return
+        }
+        res.json(rows)
+    })
+})
+
+router.get('/manCity', (req, res) => {
+   
+    const connection = getConnection()
+    
+    const queryString = "SELECT * FROM manCity"
+    connection.query(queryString, (err, rows, fields) => {
+        if (err) {
+            console.log("Failed to query goals: " + err)
+            res.sendStatus(500)
+            return
+        }
+        res.json(rows)
+    })
+})
+
+router.get('/manUtd', (req, res) => {
+   
+    const connection = getConnection()
+    
+    const queryString = "SELECT * FROM manUtd"
+    connection.query(queryString, (err, rows, fields) => {
+        if (err) {
+            console.log("Failed to query goals: " + err)
+            res.sendStatus(500)
+            return
+        }
+        res.json(rows)
+    })
+})
+
+router.get('/suggestions', (req, res) => {
+   
+    const connection = getConnection()
+    
+    const queryString = "SELECT * FROM suggestions"
+    connection.query(queryString, (err, rows, fields) => {
+        if (err) {
+            console.log("Failed to query suggestions: " + err)
             res.sendStatus(500)
             return
         }

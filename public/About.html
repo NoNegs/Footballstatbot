@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href = "footballStyle.css"
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "./Styles/footballStyle.css"
         rel="stylesheet"
         type="text/css"></link>
         <script src="Footballapi.js"></script>
@@ -12,55 +13,29 @@
         <img src="Footballstatbot.png" alt="Footballstatbot">
     </h1>
     <div>
-        <ul class="breadcrumb">
-            <li><a href="Home.html">Home</a></li>
-            <li><a href="League.html">League</a></li>
-            <li><a href="Season.html">Season</a></li>
-            <li><a href="Team.html">Team</a></li>
-            <li>Liverpool</li>
-        </ul>   
+      <ul class="breadcrumb">
+          <li><a href="Home.html">Home</a></li>
+          <li>About Us</li>
+        </ul>
     </div>
-        <div class="Liverpool">
-            <form action="/action_page.php" method="get">
-                <label class="radio"><input type="radio" name="rsvp" checked>Goals</label>
-                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Clean Sheets</label>
-                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Cards</label>
-                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Tackles</label>
-                <label class="radio" disabled><input type="radio" name="rsvp" disabled>Apperances</label>
-                <div>
-                    <label class ="checkbox"><input type="checkbox" id="August" value="August"> August</label><br>
-                    <label class ="checkbox"><input type="checkbox" id="September" value="September"> September</label><br>
-                    <label class ="checkbox"><input type="checkbox" id="October" value="October"> October</label><br>
-                    <label class ="checkbox"><input type="checkbox" id="November" value="November"> November</label><br>
-                    <label class ="checkbox"><input type="checkbox" id="December" value="December"> December</label><br>
-                    <label class ="checkbox"><input type="checkbox" id="January" value="January"> Janaury</label><br>
-                    <label class ="checkbox"><input type="checkbox" id="February" value="February"> February</label><br>
-                    <label class ="checkbox"><input type="checkbox" id="March" value="March"> March</label><br>
-                    <label class ="checkbox"><input type="checkbox" id="April" value="April"> April</label><br>
-                    <label class ="checkbox"><input type="checkbox" id="May" value="May"> May</label><br>
-                    </form>    
-                </div>
-                <button onclick="myFunction()">Submit</button>
-                <a href="http://localhost:3003/Request_Suggestion.html">Suggestions</a>
-                
-                <div class = "months" id="months"></div>
-            </div>
-            
-                  
-
+    <div class = "mainH">
+        <div class = "months" id="months"></div>
+           
+    </div>
     <div class ="footer">
-        <div class ="block">
-            <h2>General</h2>
-            <ul>
-                <a href="#">About Us</a><br>
-                <a href="#">Terms of Use</a><br>
-                <a href="#">Glossary</a>
+            <div class ="block">
+                <h2>General</h2>
+                <ul>
+                    <a href="About.html">About Us</a><br>
+                    <a href="TermsOfUse.html">Terms of Use</a><br>
+                    <a href="Glossary.html">Glossary</a>
                 </ul>
             </div>
             <div class = "block">
             <h2>Contact Us</h2>
                 <ul>
-                    <a href="#">Contact Us</a><br>
+                    <a href="ContactUs.html">Contact Us</a><br>
+                    <a href="http://localhost:3003/Request_Suggestion.html">Make A Suggestion</a><br>
                 </ul>
             </div>
             <div class = "block">
@@ -95,7 +70,7 @@
                             parameters.push("December"); 
                           }
                           if( document.getElementById("January").checked){
-                            parameters.push("January"); 
+                            parameters.push("Janaury"); 
                           }
                           if( document.getElementById("February").checked){
                             parameters.push("February"); 

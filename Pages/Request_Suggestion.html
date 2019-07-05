@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "contactStyle.css"
+        rel="stylesheet"
+        type="text/css"></link>
+        <script src="../Footballapi.js"></script>
+
+
+    </head>
+    <body>
+    <h1>Football Statbot 
+        <img src="Footballstatbot.png" alt="Footballstatbot">
+    </h1>
+    <div>
+        <ul class="breadcrumb">
+            <li><a href="Home.html">Home</a></li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class = "mainH">
+        <div class = "months" id="months"></div>
+            <div class="container-contact100">
+                <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+        
+                <div class="wrap-contact100">
+                    <span class="contact100-form-symbol">
+                        <img src="Suggestion.png" alt="SYMBOL-MAIL">
+                    </span>
+        
+                    <form class="contact100-form validate-form flex-sb flex-w" id="myForm" action="/suggestions_create" method="POST">
+                        <span class="contact100-form-title">
+                            Make A Suggestion
+                        </span>
+        
+                        <div class="wrap-input100 rs1 validate-input" data-validate = "First Name is required">
+                            <input class="input100" type="text" name="create_first_name" placeholder="First Name">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="wrap-input100 rs1 validate-input" data-validate = "Second Name is required">
+                            <input class="input100" type="text" name="create_second_name" placeholder="Second Name">
+                            <span class="focus-input100"></span>
+                        </div>
+        
+                        <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                            <textarea class="input100" name="create_suggestions" placeholder="Write your suggestion"></textarea>
+                            <span class="focus-input100"></span>
+                        </div>
+        
+                        <div class="container-contact100-form-btn">
+                            <button type = "submit" class="contact100-form-btn">
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+    <div class ="footer">
+            <div class ="block">
+                <ul>
+                    <h2>General</h2>
+                    <a href="About.html">About Us</a><br>
+                    <a href="TermsOfUse.html">Terms of Use</a><br>
+                    <a href="Glossary.html">Glossary</a>
+                </ul>
+            </div>
+            <div class = "block">
+                <ul>
+                    <h2>Contact Us</h2>
+                    <a href="http://localhost:3003/ContactForm.html">Contact Us</a><br>
+                    <a href="http://localhost:3003/Request_Suggestion.html">Make A Suggestion</a><br>
+                </ul>
+            </div>
+            <div class = "block">
+                <ul>
+                    <h2>Social Media Network</h2>
+                    <a href="https://twitter.com/Footballstatbo1" class="fa fa-twitter"></a><a href="https://twitter.com/Footballstatbo1">Twitter</a><br>
+                    <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a><a href="https://en-gb.facebook.com/">Facebook</a><br>
+                </ul>
+            </div>
+            <div class = "block">
+            <h2>Football Statbot App</h2>
+                <img src="google-play-badge.png" alt="google-play-badge"><br>
+                <img src="App-store.png" alt="App-store">
+            </div>
+    </body>
+</html>

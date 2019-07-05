@@ -45,6 +45,11 @@ body {
     margin-top: 20px;
 }
 
+.mainR {
+   
+    margin-top: 20px;
+}
+
 .mainT {
     height: 800px;
     text-align: center;
@@ -134,6 +139,7 @@ option {
 }
 
 ul.breadcrumb {
+    padding-top: 20px;
     padding: 10px 16px;
     list-style: none;
   }
@@ -151,7 +157,32 @@ ul.breadcrumb {
 
   .months {
     font-size: 30px;
-    width: 100%;
+    width: 40%;
     display: table;
 
+
   }
+
+  .result {
+      display: table;
+      border: 1px solid black;
+      background: #DDDDDD;
+      text-align: center;
+      width: 800px;
+      margin-left: 200px;
+
+    }
+
+td {
+        font-size: 20px;
+        border: 1px solid black;
+    }
+
+th {
+        font-size: 20px;
+        border: 1px solid black;
+    }
+
+
+ 
+    

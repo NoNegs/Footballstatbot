@@ -4,11 +4,9 @@
     margin: 0;
     font-family: Century Gothic;
 }
-img {
-    top: 100px;
-    width: 100px;
 
-}
+
+
 head {
     width: 500px;
     background-color: #CB0101;
@@ -140,7 +138,7 @@ ul.breadcrumb {
 
   ul.breadcrumb li {
     display: inline;
-    font-size: 18px;
+    font-size: 30px;
   }
 
   ul.breadcrumb li+li:before {
@@ -167,3 +165,4 @@ ul.breadcrumb {
       margin-left: 200px;
 
     }
+

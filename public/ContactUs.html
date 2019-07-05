@@ -2,41 +2,39 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href = "footballStyle.css"
+        <link href = "../Styles/footballStyle.css"
         rel="stylesheet"
         type="text/css"></link>
-        <script src="Footballapi.js"></script>
+        <script src="../Footballapi.js"></script>
 
     </head>
     <body>
     <h1>Football Statbot 
-        <img src="Footballstatbot.png" alt="Footballstatbot">
+        <img src="../Pictures/Footballstatbot.png" alt="Footballstatbot">
     </h1>
+    <div>
+      <ul class="breadcrumb">
+          <li><a href="Home.html">Home</a></li>
+          <li>Contact Us</li>
+        </ul>
+    </div>
     <div class = "mainH">
         <div class = "months" id="months"></div>
-        <div>
-                Make a suggestion by filling out the fields below
-                <form id="myForm" action="/suggestions_create" method="POST" class="form">
-                    <input placeholder="First Name" name="create_first_name"/>
-                    <input placeholder="Second Name" name="create_second_name"/>
-                    <input placeholder="Suggestions" name="create_suggestions"/>
-                    <button type = "submit">Submit</button>
-                </form>
-            </div>
+           
     </div>
     <div class ="footer">
             <div class ="block">
                 <h2>General</h2>
                 <ul>
-                    <a href="../Pages/About.html">About Us</a><br>
-                    <a href="../Pages/TermsOfUse.html">Terms of Use</a><br>
-                    <a href="../Pages/Glossary.html">Glossary</a>
+                    <a href="About.html">About Us</a><br>
+                    <a href="TermsOfUse.html">Terms of Use</a><br>
+                    <a href="Glossary.html">Glossary</a>
                 </ul>
             </div>
             <div class = "block">
             <h2>Contact Us</h2>
                 <ul>
-                    <a href="http://localhost:3003/ContactUs.html">Contact Us</a><br>
+                    <a href="ContactUs.html">Contact Us</a><br>
                     <a href="http://localhost:3003/Request_Suggestion.html">Make A Suggestion</a><br>
                 </ul>
             </div>
@@ -49,9 +47,8 @@
             </div>
             <div class = "block">
             <h2>Football Statbot App</h2>
-                <img src="google-play-badge.png" alt="google-play-badge">
+                <img src="../Pictures/google-play-badge.png" alt="google-play-badge">
             </div>
-
     </body>
     
     

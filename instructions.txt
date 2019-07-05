@@ -1,8 +1,0 @@
-1.Download Node.js
-2.Open visual stuido 
-3.Click on view, Command Pallate and then Open in Intergrated Terminal
-4.npm init - will create json package 
-5.npm install express - will install express
-6.create js file 
-7.once code written run node app.js
-8.npm install -g nodemon

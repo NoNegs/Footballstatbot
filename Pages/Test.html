@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "contactStyle.css"
+        rel="stylesheet"
+        type="text/css"></link>
+        <script src="Footballapi.js"></script>
+
+
+    </head>
+    <body>
+    <h1>Football Statbot 
+        <img src="Footballstatbot.png" alt="Footballstatbot">
+    </h1>
+    <div>
+        <ul class="breadcrumb">
+            <li><a href="Home.html">Home</a></li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class = "mainH">
+            <div class="container-contact100">
+                <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+        
+                <div class="wrap-contact100">
+                    <span class="contact100-form-symbol">
+                        <img src= "football.jpg" alt="SYMBOL-MAIL">
+                    </span>
+        
+                    <form class="contact100-form validate-form flex-sb flex-w" id="myForm">
+                        <span class="contact100-form-title">
+                            Please select months and press submit to see goals scored in those months
+                        </span>
+        
+                        <div class="wrap-input100 rs1 validate-input" data-validate = "First Name is required">
+                            <form>
+                                <label class ="checkbox"><input type="checkbox" id="August" value="August"> August</label><br>
+                                <label class ="checkbox"><input type="checkbox" id="September" value="September"> September</label><br>
+                                <label class ="checkbox"><input type="checkbox" id="October" value="October"> October</label><br>
+                                <label class ="checkbox"><input type="checkbox" id="November" value="November"> November</label><br>
+                                <label class ="checkbox"><input type="checkbox" id="December" value="December"> December</label><br>
+                                <label class ="checkbox"><input type="checkbox" id="January" value="January"> Janaury</label><br>
+                                <label class ="checkbox"><input type="checkbox" id="February" value="February"> February</label><br>
+                                <label class ="checkbox"><input type="checkbox" id="March" value="March"> March</label><br>
+                                <label class ="checkbox"><input type="checkbox" id="April" value="April"> April</label><br>
+                                <label class ="checkbox"><input type="checkbox" id="May" value="May"> May</label><br>
+                            </form> 
+                        </div>
+        
+                        <div class="container-contact100-form-btn">
+                            <button onclick="myFunction()" class="contact100-form-btn">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                    <div class = "months" id="months"></div>
+                </div>
+            </div>
+           
+    <div class ="footer">
+            <div class ="block">
+                <ul>
+                    <h2>General</h2>
+                    <a href="About.html">About Us</a><br>
+                    <a href="TermsOfUse.html">Terms of Use</a><br>
+                    <a href="Glossary.html">Glossary</a>
+                </ul>
+            </div>
+            <div class = "block">
+                <ul>
+                    <h2>Contact Us</h2>
+                    <a href="http://localhost:3003/ContactForm.html">Contact Us</a><br>
+                    <a href="http://localhost:3003/Request_Suggestion.html">Make A Suggestion</a><br>
+                    <a href="Suggestions_Results.html">Results</a><br>
+                </ul>
+            </div>
+            <div class = "block">
+                <ul>
+                    <h2>Social Media Network</h2>
+                    <a href="https://twitter.com/Footballstatbo1" class="fa fa-twitter"></a><a href="https://twitter.com/Footballstatbo1">Twitter</a><br>
+                    <a href="https://en-gb.facebook.com/" class="fa fa-facebook"></a><a href="https://en-gb.facebook.com/">Facebook</a><br>
+                </ul>
+            </div>
+            <div class = "block">
+            <h2>Football Statbot App</h2>
+                <img src="google-play-badge.png" alt="google-play-badge"><br>
+                <img src="App-store.png" alt="App-store">
+            </div>
+    </body>
+    <script>
+            function myFunction() {
+                var parameters=new Array();
+                //alert()
+                  if (document.getElementById("August").checked) {
+                    parameters.push("August");
+                  }
+                  if( document.getElementById("September").checked){
+                    parameters.push("September"); 
+                  }
+                  if( document.getElementById("October").checked){
+                    parameters.push("October"); 
+                  }
+                  if( document.getElementById("November").checked){
+                    parameters.push("November"); 
+                  }
+                  if( document.getElementById("December").checked){
+                    parameters.push("December"); 
+                  }
+                  if( document.getElementById("January").checked){
+                    parameters.push("January"); 
+                  }
+                  if( document.getElementById("February").checked){
+                    parameters.push("February"); 
+                  }
+                  if( document.getElementById("March").checked){
+                    parameters.push("March"); 
+                  }
+                  if( document.getElementById("April").checked){
+                    parameters.push("April"); 
+                  }
+                  if( document.getElementById("May").checked){
+                    parameters.push("May"); 
+                  }
+                  fetchGoals(parameters);
+
+                  
+        }
+    </script>
+</html>
